@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hey PTC!</title>
+    <style>
+      :root {
+        --bg1: #0f172a;
+        --bg2: #0ea5a4;
+        --card: rgba(255, 255, 255, 0.06);
+        --accent: #f59e0b;
+        --glass: rgba(255, 255, 255, 0.06);
+        --radius: 16px;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background: radial-gradient(
+            circle at 10% 10%,
+            rgba(14, 165, 164, 0.12),
+            transparent 10%
+          ),
+          linear-gradient(135deg, var(--bg1), #05264b 60%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #e6eef8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        width: min(920px, 94%);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.02)
+        );
+        border-radius: var(--radius);
+        padding: 48px;
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6),
+          inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px) saturate(120%);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 12px 0;
+        font-size: 48px;
+        letter-spacing: -1px;
+        line-height: 1;
+        background: linear-gradient(90deg, #fff, #a7f3d0 40%, #fde68a 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 6px 24px rgba(10, 20, 40, 0.6);
+      }
+
+      p.lead {
+        margin: 0 0 28px 0;
+        color: #cfeff3;
+        opacity: 0.9;
+        font-size: 18px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 22px;
+        font-size: 16px;
+        border-radius: 12px;
+        border: none;
+        cursor: default;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.02)
+        );
+        box-shadow: 0 6px 18px rgba(2, 6, 23, 0.5),
+          0 1px 0 rgba(255, 255, 255, 0.02) inset;
+        color: var(--accent);
+        transition: transform 0.12s ease;
+        user-select: none;
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+
+      .decor {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .blob {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #0ea5a4, #38bdf8);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #04263a;
+        box-shadow: 0 8px 30px rgba(14, 165, 164, 0.12);
+      }
+
+      footer {
+        margin-top: 28px;
+        color: #9fbcc9;
+        font-size: 13px;
+      }
+
+      @media (max-width: 520px) {
+        h1 {
+          font-size: 32px;
+        }
+
+        .container {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container" role="main">
+      <h1>Hey PTC!</h1>
+      <p class="lead">
+        Welcome to MYSQL Summer CTF ✨
+      </p>
+      <p class="lead">
+        REc0n this page well, you will have a lead for CTF ✨
+      </p>
+
+      <button class="btn" type="button" aria-label="Decorative button">
+        Nice!
+      </button>
+
+      <div class="decor" aria-hidden="true">
+        <div class="blob">Network</div>
+        <div
+          class="blob"
+          style="background: linear-gradient(135deg, #f97316, #fcd34d)"
+        >
+          Web
+        </div>
+        <div
+          class="blob"
+          style="background: linear-gradient(135deg, #7c3aed, #60a5fa)"
+        >
+          OK
+        </div>
+      </div>
+
+      <footer>
+        DO NOT USE ANY BRUTE FORCE TECHNIQUES on any CTFs, follow the hints...
+      </footer>
+    </main>
+
+    <!-- Hidden JS crumb for solvers -->
+    <script>
+      const a = "cHRj"; const b = "dXNl"; const c = "cj";
+      const d = "Ok1p"; const e = "bnRA"; const f = "OTg3";
+      const g = "NjU0MzIxMA==";
+    </script>
+  </body>
+</html>
